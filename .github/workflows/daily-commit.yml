@@ -15,9 +15,6 @@ jobs:
       - name: Update timestamp for 24f2006326@ds.study.iitm.ac.in
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-              - name: Update timestamp for 24f2006326@ds.study.iitm.ac.in
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           echo "Last run: $(date -u)" > last-run.txt
           git config --global user.name "GitHub Action"
